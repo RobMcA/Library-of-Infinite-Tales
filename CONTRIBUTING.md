@@ -11,6 +11,8 @@ reader app.
    - A `book.json` at the root (single book), or
    - A `books.json` at the root (collection of books in subdirectories).
 
+   `book.json` holds the book's metadata and passages. If your book uses the encounter picker (Ages, Characters, Locations, Milieus, Quests), also include a components file (e.g. `components.json`) and declare it in `book.json` as `"components": "components.json"`. Multiple books in a collection can share the same components file.
+
 2. **Test it in the app** by pasting your repo URL into the reader at
    [book-of-infinite-tales.github.io](https://book-of-infinite-tales.github.io)
    (or `owner/repo` shorthand). The book must load without validation errors.
